@@ -1,2 +1,7 @@
 ﻿etapa,registros_antes,registros_depois,removidos,observação
 Leitura da base original,72529,72529,0,sem exclusões
+Remoção de ausentes nas variáveis-chave,72529,72529,0,"colunas: ['id', 'data', 'tipo_acidente', 'pessoas', 'mortos', 'veiculos']"
+Filtro: ocorrências em 2025,72529,72529,0,mantém apenas datas entre 2025-01-01 e 2025-12-31
+Remoção de linhas idênticas,72529,72529,0,mantida a primeira ocorrência
+Remoção de IDs repetidos,72529,72529,0,mantida a primeira ocorrência do ID
+Remoção de registros logicamente inválidos,72529,72529,0,"regras: valores negativos (pessoas, mortos ou veiculos); mais mortos do que pessoas; nenhuma pessoa envolvida (pessoas == 0); nenhum veículo envolvido (veiculos == 0)"
